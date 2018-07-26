@@ -1,0 +1,15 @@
+diff --git a/src/SharethisManager.php b/src/SharethisManager.php
+index 674bdc3..1505ac8 100644
+--- a/src/SharethisManager.php
++++ b/src/SharethisManager.php
+@@ -117,9 +117,8 @@ class SharethisManager implements SharethisManagerInterface {
+       $path_obj = Url::fromUri('base://' .$path, ['absolute' => TRUE]);
+       $m_path = $path_obj->toString();
+       $mtitle = $this->titleResolver->getTitle($this->requestStack->getCurrentRequest(), $this->routeMatch->getRouteObject());
+-      $m_title = is_object($mtitle) ? $mtitle->getUntranslatedString() : $config->get('name');
++      $m_title = is_object($mtitle) ? $mtitle->getUntranslatedString() : $mtitle;
+       return $this->renderSpans($data_options, $m_title, $m_path);
+-
+     }
+   }
+ 
