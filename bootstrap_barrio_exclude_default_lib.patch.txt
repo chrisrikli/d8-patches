@@ -1,0 +1,13 @@
+diff --git a/bootstrap_barrio.info.yml b/bootstrap_barrio.info.yml
+index 72a1746..51ab505 100644
+--- a/bootstrap_barrio.info.yml
++++ b/bootstrap_barrio.info.yml
+@@ -11,8 +11,6 @@ libraries:
+ libraries-extend:
+   core/drupal.dropbutton:
+     - bootstrap_barrio/dropbutton
+-  file/drupal.file:
+-    - bootstrap_barrio/file
+ 
+ ckeditor_stylesheets:
+   - css/base/elements.css
